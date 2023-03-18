@@ -1,0 +1,26 @@
+# Aulas_FPB_Junio
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Conta {
+
+	public static void main(String[] args) {
+		// divisão de contas de numéro inteiro e ponto flutuante
+	
+Scanner entrada  = new Scanner(System.in);
+DecimalFormat df = new DecimalFormat("##.00");
+	 
+System.out.println("Informe aqui o valor da conta");
+double valortotal = entrada.nextDouble();
+
+double valorinteiro = (int) valortotal /3;
+double valorquebrado = valortotal - (valorinteiro *2);
+ 
+System.out.println("O valor que João e Gustavo paga é = " + df.format(valorinteiro) + "R$");
+System.out.println();
+System.out.println("O valor que Bruno paga é = " + df.format(valorquebrado) + "R$");
+
+	}
+
+}
