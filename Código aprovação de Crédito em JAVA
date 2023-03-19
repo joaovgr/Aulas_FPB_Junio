@@ -20,6 +20,41 @@ if (prest > sl1) {System.out.println(" Crédito não aprovado! ");}
 else {System.out.println(" Crédito aprovado =)!" );}
 
 
+// A mesma melhorada!
+
+import java.util.Scanner;
+
+public class CalculadoraAprovacao {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Informe aqui o valor do seu salário : ");
+		double sl = sc.nextDouble();
+
+		double sl1 = (sl * 30) / 100;
+
+		System.out.println(" Informe aqui o valor da parecla : ");
+		double par = sc.nextDouble();
+
+		if (par > sl1) {
+			System.out.println();
+			System.out.println(" *****************************");
+			System.out.println();
+			System.out.println(" Linha de cédito não aprovada! ");
+			System.out.println();
+			System.out.println(" *****************************");
+			System.out.println();
+		} else {
+			System.out.println();
+			System.out.println("***************************");
+			System.out.println();
+			System.out.println(" Linha de crédito aprovada! ");
+			System.out.println();
+			System.out.println("***************************");
+
+
  
 	}
 
